@@ -1,0 +1,51 @@
+EX-NO-03:
+		GENERAL PURPOSE COMMANDS
+AIM:
+   To write down the syntax and execute General Purpose commands: wc, cal, date, who, tty and ln.
+PROCEDURE:
+a) wc:
+    This command is used to display the number of lines, words and characters in the specified file.
+	Syntax:
+	 wc [-options] <filename>
+	Option:
+	 -l-Displays the number of lines in a file.
+	 -w-Displays the number of words in a file.
+	 -c-Displays the number of characters in a file.
+b) cal: (Calendar)
+    This command will display calendar for the specified month and the year.
+	Syntax:
+	 cal [month] [year]
+c) date:
+    This command displays the system's date and time.
+	Syntax:
+	  date +<format>
+	where <format> is
+	%H Hour -00 to 23
+	%I Hour -00 to 12
+	%M Minute - 00 to 59
+	%S Second-00 to 59	
+	%D Date MM/DD/YY
+	%T Time - HH:MM:SS
+	%w Day of the week
+	%r Time in AM/PM
+	%y Last two digits of the year.
+d) ln: (link)
+    This ln (link) command is used to establish an additional filename to a specified file.
+    It doesn't mean that creating more copies of the specified file.
+	Syntax:
+	 ln <filename> <additional-filename>
+e) tty:
+    This command prints the file name of the terminal connected to standard input.
+	Syntax:
+	  tty
+f) who:
+    This command is used to display the users who are logged on the system currently.
+	Syntax:
+	 who [-options]
+ 	Option:
+	 -b-Time of last system boot
+	 -q-Print all login names and number of users logged on
+	 -l-Print system login processes
+	 -d-print dead processes
+RESULT:
+	Thus the above general purpose commands wc, cal, date, who, tty and ln are executed successfully.

@@ -1,0 +1,37 @@
+EX-NO-05:
+			FINDING OUT SUM
+AIM:
+To write a shell script that accepts a numerical value N and to find out sum.
+ALGORITHM:
+1. Read n
+2. Set i = 0 sum=0
+3. While (in), do the following.
+	i) i - i + 1
+	ii) sum-sum+i
+4. Repeat step 2 until i < n is true
+5. Print sum
+6. Stop
+PROGRAM:
+echo -n "Enter the value of N: "
+read n
+i=0
+sum=0
+while [ $i -lt $n ]
+do
+((i=i+1))
+((sum=sum+i))
+done
+echo "Sum of first $n numbers = $sum"
+EXECUTION PROCEDURE:
+1. Create a script file.
+2. Open a new file using vi ex5.sh.
+3. Write your script and Type the shell script inside the editor Save and exit
+4. Press Esc, then type: wq to save and quit.
+5. Make the script executable
+6. Run:
+     chmod u+x ex5.sh
+7. Execute the script:
+   Run:
+     ./ex1.sh
+RESULT:
+Thus the above shell script is executed successfully and the output is obtained.

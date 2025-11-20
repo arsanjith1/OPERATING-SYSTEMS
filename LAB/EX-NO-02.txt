@@ -1,0 +1,62 @@
+EX-NO:02
+			FILE MANAGEMENT COMMANDS
+AIM:
+    To write down the syntax and execute File Management commands cat, chmod, cp, mv, rm and more.
+PROCEDURE:
+ a) cat (concatenate):
+      This cat (concatenate) command is used to display the contents of the specified files.
+	Syntax:
+	 cat [-options] <filename1> [<filename2>...]
+	Option:
+	 -S-Suppresses repeated empty output lines
+	 -E-Displays $ at the end of each line.
+	 -b-Numbers non-blank output lines.
+	 -n-Numbers all output lines
+	 -T-Displays TAB characters as 시
+	cat command can be used with redirection operator (>) to create new files.
+	 Syntax:
+            cat filename
+ 	    type the text here
+            ^d (ie press [ctrl +d] at the end)
+ b) cp (copy):
+     This cp (copy) command is used to copy the content of one file into another. 
+     If the destination is an existing file, the file is overwritten. 
+     If the destination is an existing directory, the file is copied into that directory.
+	 Syntax:
+	    cp [-options] <source_file> <destination_file>
+	 Option:
+	  -i-prompt before overwrite
+          -n-do not overwrite an existing file
+	  -p-preserves information including owner, group, permissions and timestamps.
+c) mv (move):
+     This mv (move) command is used to rename the specified liles/directories.
+	 Syntax:
+	   mv [-options] <source> <destinations
+	 Option:
+	  -i-prompt before overwriting
+	  -n-do not overwrite an existing file.
+d) rm (Remove):
+     The rm (remove) command is used to remove a file from the specified directory.
+	 Syntax:
+	  rm [options] <filename>
+	 Option:
+	  -i-prompts before deleting
+	  -r-removes directories and their contents recursively
+	  -d-removes empty directories
+	  -f-Removes write-protected files also
+e) more:
+     This more command is used to display the outpout page by page without scrolling up on the screen fastly.
+	Syntax:
+	   more [-options] <filename>
+	Option:
+	 -d
+	 -p
+	 -s
+	 +num
+f) chmod (Change Mode)
+     This chmod (change mode) command is used to change the file permissions for an existing file.
+	Syntax:
+	  chmod <group> <operation> <mode> <filename>
+
+RESULT:
+	Thus the above directory management commands: cat,cp,mv,rm,more and chmod are executed successfully.

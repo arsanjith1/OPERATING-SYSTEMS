@@ -1,0 +1,104 @@
+EX-NO-04:
+			USING THE FILTERS
+Aim
+To write down the syntax and verify the filters: pr, head, tail, cut, paste, nl, sort, grep, egrep, fgrep, write and wall.
+PROCEDURE:
+a) pr:
+This command can be used with Ipr command for neat hard copies.
+Syntax:
+pr [-options] <filename>
+Option:
+-l<number>-This changes the page size to the specified <number> of lines
+-<number>-Prepares the output with <number of columns.
+-n-This numbers each line of output.
+-t-Turns off the heading at the top of the page.
+b) head:
+This head command prints the top N number of lines of the given file. 
+Syntax:
+head [-options] <filename>
+Option:
+-n num-Prints the first 'num' lines instead of first 10 lines.
+-c num-Prints the first 'num' bytes from the file specified.
+-q-It is used it more than one file is given. Because of this command, data from each file is not preceded by its file name.
+-V-By this option, data from the specified file is always preceded by its filename.
+c) tail:
+The tail command, prints the last N number of lines of the given file. 
+Syntax:
+tail [-option] filename
+d) cut:
+This cut command is used to cut the columns/fields of a specified file.
+Syntax:
+cut [options] <filename>
+Option:
+-C-Cuts the specified characters. 
+-d-Cuts a specific by a delimiter.
+-f-Cuts the specified fields.
+e) paste
+This paste command is used to join files vertically (parallel merging), l.e., paste command merges the columns. 
+Syntax:
+paste [option] <filename>
+Option:
+-d-This option is used to specify the delimiter.
+-s-This option merges the files in sequential manner.
+This is option merges the files places and states sequentially as shown above.
+f) nl:
+nl command is used for numbering all non-blank lines in the specified text file and displays the same on the screen.
+Syntax:
+nl [-options] <filename>
+Option:
+-b-Used for numbering body lines.
+-v num-Changes first line number of the given input
+-s STRING-Adds any STRING after every logical line number.
+g) sort:
+This sort command sorts the contents of a given file based on ASCII values of characters.
+Syntax:
+sort [option] <filename>
+Option:
+-o-This option is functionally the same as redirecting the output to a file
+-r-Sorts in reverse order
+-U-Sorts a file with numerical data present inside
+-nr-Sorts a file with numerical data in reverse order.
+h) grep
+This grep (global search for regular expression) filter searches a file for a particular pattern of characters and displays all lines that contain that pattern.
+Syntax:
+grep [-options] pattern <filename>
+Option
+-c
+-i
+-n
+-v
+-o
+i) egrep:
+egrep is a pattern searching command which belongs to the family of grep functions. 
+Syntax:
+egrep [-options] 'PATTERN' <file>
+Option:
+-c
+-i
+-n
+-v
+j) fgrep:
+The fgrep command searches for fixed-character strings in a file or files.
+Syntax:
+fgrep [-options] fixed pattern <files>
+Option:
+-c
+-i
+-n
+-V
+k) write:
+This write command is a communication command which is used to send a message to another specific user.
+syntax: From the root, use the following.
+write <Recipient Login Name>
+<message>
+press ctrl+d
+l) wall (write all):
+This wall (write all) command is also a communication command used by the super-user to send a message to all the users who were currently logged on the system.
+From the root, use the following
+Syntax:
+wall
+message
+press [ctrl+d] at the end
+RESULT:
+	Thus the above general purpose commands pr, head, tail, cut, paste, nl, sort, grep, egrep, fgrep and communication commands write and wall are executed successfully.
+

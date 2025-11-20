@@ -1,0 +1,41 @@
+EX-NO:01
+		DIRECTORY MANAGEMENT COMMANDS
+AIM:
+  To write down the syntax and execute directory management commands: Is, cd, pwd, mkdir and rmdir.
+PROCEDURE:
+ a)ls:
+    This command is used to list the contents of a directory.
+       Syntax:
+	  ls [ - options]
+       Option:
+	-a — Lists all directory entries, including hidden files.
+	-l — Lists the files in long format.
+	-r — Lists the files in reverse order.
+	-t — Lists the files sorted by last modification time.
+	-p — Puts a slash ( / ) after each directory.
+	-S — Sorts and displays files by size (largest first).
+	-F — Marks executable files with * and directories with /.
+b) pwd (print working directory):
+      This pwd (print working directory) command displays the full pathname for the current working directory.
+	Syntax:
+	      pwd
+c) mkdir:
+      This mkdir (make directory) command is used to make new directories.
+	Syntax:
+	     mkdir [option] <directory_name1>/<directory_name2>
+	Option:
+	  -P — Creates consequences of directories using a single mkdir command
+d) cd:
+     This cd (change directory) command is used to change the current working directory to the specified directory.
+	Syntax:
+	     cd <directory_name>
+	     cd.. will bring back you into your home directory.
+e) rmdir:
+     The rmdir (remove directory) command is used to remove (delete) the specified directories. 
+     A directory should be empty before removing it.
+	 Syntax:
+	    rmdir [option] <directory_name1>/<directory_name2>
+	 Option:
+           -P — Removes consequences of directories using a single rmdir command.
+RESULT:
+	Thus the above directory management commands: ls, pwd, mkdir, cd and rmdir are executed successfully.

@@ -1,0 +1,54 @@
+EX-NO-07:
+			ARITHMETIC CALCULATOR
+AIM:
+  To write a shell script to perform arithmetic calculator using case statement.
+ALGORITHM:
+1. Read the two operand values a and b.
+2. Display the menu as
+a) Addition
+b) Subtraction
+c) Multiplication
+d) Division
+3. Print "Enter your choice".
+4. Read your choice c among 1, 2, 3, 4
+5. Check c using case statement.
+if 1 ⇒ s= a+b
+if 2 ⇒ s= a-b
+if 3 ⇒ s= a*b
+if 4 ⇒ s= a/b
+6. Print the result s.
+7. Stop.
+PROGRAM:
+echo "Enter the value of a"
+read a
+echo "Enter the value of b"
+read b
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+echo "Enter your choice:"
+read c
+case $c in
+1) ((s=$a+$b))
+   echo "Sum of $a and $b is $s" ;;
+2) ((s=a-b))
+   echo "Difference of $a and $b is $s" ;;
+3) ((s=$a*$b))
+   echo "Product of $a and $b is $s" ;;
+4) ((s=$a/$b))
+   echo "Division of $a by $b is $s" ;;
+esac
+EXECUTION PROCEDURE:
+1. Create a script file.
+2. Open a new file using vi ex5.sh.
+3. Write your script and Type the shell script inside the editor Save and exit
+4. Press Esc, then type: wq to save and quit.
+5. Make the script executable
+6. Run:
+     chmod u+x ex5.sh
+7. Execute the script:
+   Run:
+     ./ex1.sh
+RESULT:
+    Thus the above shell script for arithmetic calculator is developed using case statement and executed successfully and the output is obtained.

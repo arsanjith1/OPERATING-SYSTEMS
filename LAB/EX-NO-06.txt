@@ -1,0 +1,37 @@
+EX-NO-06:
+			FACTORIAL OF A GIVEN NUMBER
+AIM:
+To write a shell script to find the factorial of a given number.
+ALGORITHM:
+1. Read n
+2. Set fact=1, i-1
+3. While(i<n), do the following
+	i) fact=fact*i
+	ii) i = i + 1
+4. Repeat step 2 until i<=n is true
+5. Print fact
+6. Stop
+PROGRAM:
+echo "Enter a number"
+read n
+fact=1
+i=1
+while [ $i -le $n ]
+do
+((fact=fact * i))
+((i=i+1))
+done
+echo "Factorial of a number $n is $fact"
+EXECUTION PROCEDURE:
+1. Create a script file.
+2. Open a new file using vi ex5.sh.
+3. Write your script and Type the shell script inside the editor Save and exit
+4. Press Esc, then type: wq to save and quit.
+5. Make the script executable
+6. Run:
+     chmod u+x ex5.sh
+7. Execute the script:
+   Run:
+     ./ex1.sh
+RESULT:
+Thus the above shell script is executed successfully and the output is obtained.
